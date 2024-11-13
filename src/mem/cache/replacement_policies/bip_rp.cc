@@ -62,3 +62,34 @@ BIP::reset(const std::shared_ptr<ReplacementData>& replacement_data) const
 
 } // namespace replacement_policy
 } // namespace gem5
+
+
+
+// void
+// BIP::reset(const std::shared_ptr<ReplacementData>& replacement_data) const
+// {
+//     std::cout<<"hey here vivek lets uite we can";
+//     std::shared_ptr<LRUReplData> casted_replacement_data =
+//         std::static_pointer_cast<LRUReplData>(replacement_data);
+
+//     // Custom logic to set the position at the ith spot in the recency stack
+//     casted_replacement_data->lastTouchTick = curTick();
+
+//     // Define the output directory and file path
+//     std::string outputDir = "/home/kpvivek/ca_gem5/gem5/";
+//     std::string filePath = outputDir + "output.txt";
+
+//     // Optionally check if the directory exists, create it if not (C++17 and later)
+//     if (!std::filesystem::exists(outputDir)) {
+//         std::filesystem::create_directories(outputDir);
+//     }
+
+//     // Open a file in append mode
+//     std::ofstream outFile(filePath, std::ios::app);
+//     if (outFile.is_open()) {
+//         outFile << casted_replacement_data->lastTouchTick << std::endl;
+//         outFile.close(); // Close the file after writing
+//     } else {
+//         std::cerr << "Error: Unable to open file for writing at " << filePath << std::endl;
+//     }
+// }
