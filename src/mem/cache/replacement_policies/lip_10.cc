@@ -1,9 +1,9 @@
 
-#include "mem/cache/replacement_policies/lip_2.hh"
+#include "mem/cache/replacement_policies/lip_10.hh"
 
 #include <memory>
 
-#include "params/LIP2RP.hh"
+#include "params/LIP10RP.hh"
 #include "sim/cur_tick.hh"
 
 namespace gem5
@@ -12,12 +12,12 @@ namespace gem5
 namespace replacement_policy
 {
 
-LIP2::LIP2(const Params &p)
+LIP10::LIP10(const Params &p)
     : LRU(p)
 {
 }
 void
-LIP2::reset(const std::shared_ptr<ReplacementData>& replacement_data) const
+LIP10::reset(const std::shared_ptr<ReplacementData>& replacement_data) const
 {
 
     // Set last touch timestamp
@@ -27,7 +27,7 @@ LIP2::reset(const std::shared_ptr<ReplacementData>& replacement_data) const
 }
 
 void
-LIP2::invalidate(const std::shared_ptr<ReplacementData>& replacement_data)
+LIP10::invalidate(const std::shared_ptr<ReplacementData>& replacement_data)
 {
     // Reset last touch timestamp
     std::static_pointer_cast<LRUReplData>(
@@ -36,7 +36,7 @@ LIP2::invalidate(const std::shared_ptr<ReplacementData>& replacement_data)
 }
 
 void
-LIP2::touch(const std::shared_ptr<ReplacementData>& replacement_data) const
+LIP10::touch(const std::shared_ptr<ReplacementData>& replacement_data) const
 {
     // Update last touch timestamp
     std::static_pointer_cast<LRUReplData>(
@@ -45,7 +45,7 @@ LIP2::touch(const std::shared_ptr<ReplacementData>& replacement_data) const
 }
 
 ReplaceableEntry*
-LIP2::getVictim(const ReplacementCandidates& candidates) const
+LIP10::getVictim(const ReplacementCandidates& candidates) const
 {
     // There must be at least one replacement candidate
     assert(candidates.size() > 0);

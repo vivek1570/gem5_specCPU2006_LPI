@@ -156,7 +156,7 @@
 <clipPath id="clip1">
   <path d="M 89 21 L 91 21 L 91 221 L 89 221 Z "/>
 </clipPath>
-<clipPath id="clip2">
+<clipPath id="cLIP10">
   <path d="M 201 21 L 203 21 L 203 221 L 201 221 Z "/>
 </clipPath>
 <clipPath id="clip3">
@@ -182,7 +182,7 @@
 <g clip-path="url(#clip1)" clip-rule="nonzero">
 <path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(39.99939%,39.99939%,39.99939%);stroke-opacity:0.5;stroke-dasharray:1,2;stroke-miterlimit:3.25;" d="M 90.226562 220.007812 L 90.226562 21 "/>
 </g>
-<g clip-path="url(#clip2)" clip-rule="nonzero">
+<g clip-path="url(#cLIP10)" clip-rule="nonzero">
 <path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(39.99939%,39.99939%,39.99939%);stroke-opacity:0.5;stroke-dasharray:1,2;stroke-miterlimit:3.25;" d="M 201.996094 220.007812 L 201.996094 21 "/>
 </g>
 <g clip-path="url(#clip3)" clip-rule="nonzero">

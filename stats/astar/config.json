@@ -953,8 +953,8 @@
             },
             "replace_expansions": true,
             "replacement_policy": {
-                "type": "LIP2RP",
-                "cxx_class": "gem5::replacement_policy::LIP2",
+                "type": "LIP10RP",
+                "cxx_class": "gem5::replacement_policy::LIP10",
                 "name": "replacement_policy",
                 "path": "system.l2.replacement_policy",
                 "eventq_index": 0

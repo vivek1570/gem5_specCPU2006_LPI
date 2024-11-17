@@ -1,6 +1,6 @@
 
-#ifndef __MEM_CACHE_REPLACEMENT_POLICIES_LIP2_HH__
-#define __MEM_CACHE_REPLACEMENT_POLICIES_LIP2_HH__
+#ifndef __MEM_CACHE_REPLACEMENT_POLICIES_LIP10_HH__
+#define __MEM_CACHE_REPLACEMENT_POLICIES_LIP10_HH__
 #include <queue>
 #include <functional>
 
@@ -9,19 +9,19 @@
 namespace gem5
 {
 
-struct LIP2RPParams;
+struct LIP10RPParams;
 
 namespace replacement_policy
 {
 
-class LIP2 : public LRU
+class LIP10 : public LRU
 {
   public:
-    typedef LIP2RPParams Params;
+    typedef LIP10RPParams Params;
     mutable std::priority_queue<Tick> maxHeap;
 
-    LIP2(const Params &p);
-    ~LIP2() = default;
+    LIP10(const Params &p);
+    ~LIP10() = default;
 
     void invalidate(const std::shared_ptr<ReplacementData>& replacement_data) override;
 
@@ -35,4 +35,4 @@ class LIP2 : public LRU
 } // namespace replacement_policy
 } // namespace gem5
 
-#endif // __MEM_CACHE_REPLACEMENT_POLICIES_LIP2_RP_HH__
+#endif // __MEM_CACHE_REPLACEMENT_POLICIES_LIP10_RP_HH__
